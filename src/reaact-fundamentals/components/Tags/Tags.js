@@ -2,10 +2,13 @@ import React from "react";
 
 import "./tags.css";
 
-export const Tags = () => {
+export const Tags = (props) => {
+  console.log('...basic tags...',props)
   //   return <h1 className="basic tags">Practice on HTML Tags</h1>;
   return (
     <div>
+     <h1 className="basic tags">{props.title}</h1>;
+
       <h1>Sudarshana</h1>
       <br />
       <del>Sudarshana</del>
