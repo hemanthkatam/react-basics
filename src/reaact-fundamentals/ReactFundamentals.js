@@ -17,8 +17,10 @@ export const ReactFundamentals = () => {
   const onButtonClick1=()=>{
     console.log("clicked")
   }
-  const table="I am table"
+  const table="I am table from React"
   const footer="I am footer from ReactFundamentals";
+  const content="I am the content for React"
+  const tags=" I am having basic html tags "
   return (
     <div>
       <Header
@@ -27,11 +29,11 @@ export const ReactFundamentals = () => {
         age={25}
       />
       <Button title={buttonName} onButtonClickHandler={onButtonClick} />
-      <Tags />
+      <Tags title={tags} />
       <Table  title={table}/>
       <Footer 
       footerMessage={footer}/>
-      <Content />
+      <Content  title={content}/>
       <StyledButton title={buttonName1} onButtonClickHandler={onButtonClick1}/>
     </div>
   );

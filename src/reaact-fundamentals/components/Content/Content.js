@@ -1,8 +1,11 @@
 import React from "react";
 
-export const Content = () => {
+export const Content = (props) => {
+  console.log('....Content..',props)
   return (
     <div>
+      <h1 className="content for current file">{props.title}</h1>;
+
       <mark>Unified Functional Testing </mark>
       <main>
         UFT supports keyword and scripting interfaces and features a graphical

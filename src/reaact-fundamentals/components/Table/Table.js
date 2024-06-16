@@ -4,9 +4,11 @@ import "./Table.css";
 
 export const Table = (props) => {
    console.log("--I am props--",props)
+   //  return <button onClick={props.onButtonClickHandler}>{props.title}</button>;
   return (
+    //<button onClick={props}>{props.title}</button>;
     <div>
-      <h1 className="table tags">Practice on Table Tags</h1>;
+      <h1 className="table tags">{props.title}</h1>;
       <table>
         <caption>Details of Flowers</caption>
         <tbody>
