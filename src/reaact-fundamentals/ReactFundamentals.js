@@ -1,17 +1,24 @@
 import React from "react";
 import { Header } from "./components/Header/Header";
-import { Tags } from "./components/Header/Tags/Tags";
-import { Table } from "./components/Header/Table";
+import { Tags } from "./components/Tags/Tags";
+import { Table } from "./components/Table/Table";
 //  import { Footer} from ".components/Header/Footer";
 import { Content } from "./components/Content/Content";
-import { Footer } from "./components/Header/Footer";
+import { Footer } from "./components/Footer/Footer";
 import { Button } from "./components/Button/Button";
+import { StyledButton } from "./components/StyledButton/StyledButton";
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
   const buttonName = "hey click me";
+  const buttonName1=" I am new one"
   const onButtonClick = () => {
     console.log("hey you clicked me");
   };
+  const onButtonClick1=()=>{
+    console.log("clicked")
+  }
+  const table="I am table"
+  const footer="I am footer from ReactFundamentals";
   return (
     <div>
       <Header
@@ -21,9 +28,11 @@ export const ReactFundamentals = () => {
       />
       <Button title={buttonName} onButtonClickHandler={onButtonClick} />
       <Tags />
-      <Table />
-      <Footer />
+      <Table  title={table}/>
+      <Footer 
+      footerMessage={footer}/>
       <Content />
+      <StyledButton title={buttonName1} onButtonClickHandler={onButtonClick1}/>
     </div>
   );
 };

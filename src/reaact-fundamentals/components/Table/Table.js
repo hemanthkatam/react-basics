@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Table.css";
 
-export const Table = () => {
+export const Table = (props) => {
+   console.log("--I am props--",props)
   return (
     <div>
       <h1 className="table tags">Practice on Table Tags</h1>;
