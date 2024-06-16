@@ -1,0 +1,16 @@
+.table{
+    border: 1 px solid blue;
+    border-style: dotted;
+}
+.tr,td{
+    background-color: aqua;
+}
+.caption{
+    background-color:pink;
+}
+.h1{
+    background-color: gold;
+}
+/* .div{
+    background-color: deeppink;
+} */
