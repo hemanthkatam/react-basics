@@ -5,9 +5,13 @@ import { Table } from "./components/Header/Table";
 //  import { Footer} from ".components/Header/Footer";
 import { Content } from "./components/Content/Content";
 import { Footer } from "./components/Header/Footer";
+import { Button } from "./components/Button/Button";
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
-
+  const buttonName = "hey click me";
+  const onButtonClick = () => {
+    console.log("hey you clicked me");
+  };
   return (
     <div>
       <Header
@@ -15,6 +19,7 @@ export const ReactFundamentals = () => {
         anotherMaggese="another message"
         age={25}
       />
+      <Button title={buttonName} onButtonClickHandler={onButtonClick} />
       <Tags />
       <Table />
       <Footer />
@@ -22,7 +27,14 @@ export const ReactFundamentals = () => {
     </div>
   );
 };
+
 // components will communiate in props
+
+// <Header
+// headerMessage={header} prop name like this
+// anotherMaggese="another message"
+// age={25}
+// />
 
 // TODO
 
@@ -30,3 +42,5 @@ export const ReactFundamentals = () => {
 // COTENT
 // TABLE
 // HTML tags
+
+// Create StyledButton component
