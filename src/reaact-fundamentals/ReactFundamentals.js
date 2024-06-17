@@ -7,6 +7,7 @@ import { Content } from "./components/Content/Content";
 import { Footer } from "./components/Footer/Footer";
 import { Button } from "./components/Button/Button";
 import { StyledButton } from "./components/StyledButton/StyledButton";
+import { Count1 } from "./components/Count/Count";
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
   const buttonName = "hey click me";
@@ -23,6 +24,7 @@ export const ReactFundamentals = () => {
   const tags=" I am having basic html tags "
   return (
     <div>
+      <Count1 />
       <Header
         headerMessage={header}
         anotherMaggese="another message"
