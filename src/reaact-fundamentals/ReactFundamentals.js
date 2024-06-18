@@ -9,6 +9,7 @@ import { Button } from "./components/Button/Button";
 import { StyledButton } from "./components/StyledButton/StyledButton";
 import { Count1 } from "./components/Count/Count";
 import { CounterExample } from "./components/CounterExample/CounterExample";
+import { BasicTable } from "./components/BasicTable/BasicTable";
 
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
@@ -26,6 +27,7 @@ export const ReactFundamentals = () => {
   const tags = " I am having basic html tags ";
   return (
     <div>
+      <BasicTable />
       <Count1 />
       <CounterExample />
       <Header
@@ -62,3 +64,5 @@ export const ReactFundamentals = () => {
 
 // Doube counter
 // text box
+
+// don't show button once count is 5
