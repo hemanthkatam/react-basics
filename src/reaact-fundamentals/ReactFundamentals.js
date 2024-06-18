@@ -7,6 +7,7 @@ import { Content } from "./components/Content/Content";
 import { Footer } from "./components/Footer/Footer";
 import { Button } from "./components/Button/Button";
 import { StyledButton } from "./components/StyledButton/StyledButton";
+import { Count1 } from "./components/Count/Count";
 import { CounterExample } from "./components/CounterExample/CounterExample";
 
 export const ReactFundamentals = () => {
@@ -25,6 +26,7 @@ export const ReactFundamentals = () => {
   const tags = " I am having basic html tags ";
   return (
     <div>
+      <Count1 />
       <CounterExample />
       <Header
         headerMessage={header}
