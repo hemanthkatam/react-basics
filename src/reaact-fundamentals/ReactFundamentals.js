@@ -9,11 +9,12 @@ import { Button } from "./components/Button/Button";
 import { StyledButton } from "./components/StyledButton/StyledButton";
 import { Count1 } from "./components/Count/Count";
 import { CounterExample } from "./components/CounterExample/CounterExample";
-
+import { DoubleButton } from "./components/DoubleButton/DoubleButton";
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
   const buttonName = "hey click me";
   const buttonName1 = " I am new one";
+  const doubleButton1="Counting example"
   const onButtonClick = () => {
     console.log("hey you clicked me");
   };
@@ -24,12 +25,16 @@ export const ReactFundamentals = () => {
   const footer = "I am footer from ReactFundamentals";
   const content = "I am the content for React";
   const tags = " I am having basic html tags ";
+  const doubleButton=()=>{
+      console.log("Hii I am counting no.of Clicks")
+  }
   return (
     <div>
+      <DoubleButton title={doubleButton1} onButtonClickHandler={doubleButton}/>
       <Count1 />
       <CounterExample />
       <Header
-        headerMessage={header}
+        headerMessage={header} 
         anotherMaggese="another message"
         age={25}
       />
