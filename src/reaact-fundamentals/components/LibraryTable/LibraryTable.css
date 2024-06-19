@@ -1,3 +1,24 @@
 table, th, td{
     border: 1px solid rgba(0, 0, 0, 0.866);
 }
+.Library{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.tableheader{
+    padding-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.my-button{
+    height: 40px;
+    margin: 0px 20px;
+    border-radius: 10px;
+    background-color: #72757e;
+    color: #00ff4d;
+}
