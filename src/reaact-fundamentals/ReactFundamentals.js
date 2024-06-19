@@ -10,6 +10,7 @@ import { StyledButton } from "./components/StyledButton/StyledButton";
 import { Count1 } from "./components/Count/Count";
 import { CounterExample } from "./components/CounterExample/CounterExample";
 import { DoubleButton } from "./components/DoubleButton/DoubleButton";
+import {LibraryTable  } from "./components/LibraryTable/LibraryTable"
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
   const buttonName = "hey click me";
@@ -30,11 +31,12 @@ export const ReactFundamentals = () => {
   }
   return (
     <div>
+      <LibraryTable/>
       <DoubleButton title={doubleButton1} onButtonClickHandler={doubleButton}/>
       <Count1 />
       <CounterExample />
       <Header
-        headerMessage={header} 
+        headerMessage={header}  
         anotherMaggese="another message"
         age={25}
       />
