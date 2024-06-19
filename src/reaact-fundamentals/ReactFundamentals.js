@@ -11,6 +11,8 @@ import { Count1 } from "./components/Count/Count";
 import { CounterExample } from "./components/CounterExample/CounterExample";
 import { DoubleButton } from "./components/DoubleButton/DoubleButton";
 import {LibraryTable  } from "./components/LibraryTable/LibraryTable"
+import { BasicTable } from "./components/BasicTable/BasicTable";
+
 export const ReactFundamentals = () => {
   const header = "I am header from ReactFundamentals";
   const buttonName = "hey click me";
@@ -33,6 +35,7 @@ export const ReactFundamentals = () => {
     <div>
       <LibraryTable/>
       <DoubleButton title={doubleButton1} onButtonClickHandler={doubleButton}/>
+      <BasicTable />
       <Count1 />
       <CounterExample />
       <Header
@@ -69,3 +72,5 @@ export const ReactFundamentals = () => {
 
 // Doube counter
 // text box
+
+// don't show button once count is 5

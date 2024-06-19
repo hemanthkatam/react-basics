@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./Table.css";
+// import "./Table.css";
 
 export const Table = (props) => {
-   console.log("--I am props--",props)
-   //  return <button onClick={props.onButtonClickHandler}>{props.title}</button>;
+  console.log("--I am props--", props);
+  //  return <button onClick={props.onButtonClickHandler}>{props.title}</button>;
   return (
     //<button onClick={props}>{props.title}</button>;
     <div>

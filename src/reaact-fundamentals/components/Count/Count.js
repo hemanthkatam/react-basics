@@ -18,7 +18,12 @@ export const Count1 = () => {
 
   return (
     <div className="count">
-      <button onClick={countClick}>Click me to increase count</button>
+      {clickedCounts !== 5 ? (
+        <button onClick={countClick}>Click me to increase count</button>
+      ) : (
+        <div>no button</div>
+      )}
+
       <div>you clicked me times: {clickedCounts}</div>
 
       <input type="textbox" value={inputValue} onChange={onInputChange} />
