@@ -10,7 +10,8 @@ export const Basictable = () => {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastname] = useState("");
   const [salary, setSalary] = useState("");
-  const headers = ["first_name", "last_name", "salary"];
+  const [profession,setProfession]=useState("");
+  const headers = ["first_name", "last_name", "salary","profession"];
 
   const getEmpDataFromServer = async () => {
     const response = await fetch(URL);
@@ -26,7 +27,7 @@ export const Basictable = () => {
     getEmpDataFromServer(); // call only once
   }, []);
 
-  const deleteFiorstName = (firstname) => {
+  const deleteFirstName = (firstname) => {
     const updatedDaAta = empData.filter((emp) => emp.first_name !== firstname);
     setEmpData(updatedDaAta);
   };
@@ -40,12 +41,16 @@ export const Basictable = () => {
   const onSalaryChange = (event) => {
     setSalary(event.target.value);
   };
+  const onProfessionChange=(event)=>{
+    setProfession(event.target.value)
+  };
 
-  const onSubmit = () => {
+  let  onSubmit = () => {
     const data = {
       first_name: firstname,
       last_name: lastname,
       salary: salary,
+      profession:profession,
     };
     console.log("---data", data);
     const updatedData = [...empData, data];
@@ -53,8 +58,10 @@ export const Basictable = () => {
   };
 
   return (
+
     <div className="tableMain">
       <div>
+
         <div>
           <div>First name:</div>
           <div>
@@ -73,7 +80,13 @@ export const Basictable = () => {
             <input type="textbox" onChange={onSalaryChange} />
           </div>
         </div>
-        <button onClick={onSubmit}>submit</button>
+        <div>
+          <div>profession:</div>
+          <div>
+            <input type="textbox" onChange={onProfessionChange}/>
+          </div>
+        </div>
+        <button onClick={onSubmit} disabled={!firstname||!lastname||!salary||!profession}>submit</button>
       </div>
       <table>
         <thead>
@@ -84,10 +97,11 @@ export const Basictable = () => {
         <tbody>
           {empData.map((employee) => {
             return (
-              <tr onClick={() => deleteFiorstName(employee.first_name)}>
+              <tr onClick={() => deleteFirstName(employee.first_name)}>
                 <td>{employee.first_name}</td>
                 <td>{employee.last_name}</td>
                 <td>{employee.salary}</td>
+                <td>{employee.profession}</td>
               </tr>
             );
           })}
