@@ -1,0 +1,57 @@
+.countrydelight-header{
+    display: flex;
+    gap:30px;
+    height: 70px;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-one {
+    height: 55px;
+    width: 55px;
+}
+
+.header-button{
+    height: 40px;
+    width: 170px;
+    font-size: 16px;
+    background-color: green;
+    border-radius: 10px;
+
+}
+
+.first-four{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+
+.image-title{
+    height: 400px;
+    padding: 32px;
+    border-radius: 64px;
+}
+
+.explore-categories{
+    background-color: gray;
+}
+
+.explore-content{
+    background-color: white;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+
+.explore-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.total-details{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}

@@ -10,8 +10,8 @@ export const Basictable = () => {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastname] = useState("");
   const [salary, setSalary] = useState("");
-  const [profession,setProfession]=useState("");
-  const headers = ["first_name", "last_name", "salary","profession"];
+  const [profession, setProfession] = useState("");
+  const headers = ["first_name", "last_name", "salary", "profession"];
 
   const getEmpDataFromServer = async () => {
     const response = await fetch(URL);
@@ -41,52 +41,71 @@ export const Basictable = () => {
   const onSalaryChange = (event) => {
     setSalary(event.target.value);
   };
-  const onProfessionChange=(event)=>{
-    setProfession(event.target.value)
+  const onProfessionChange = (event) => {
+    setProfession(event.target.value);
   };
 
-  let  onSubmit = () => {
+  let onSubmit = () => {
     const data = {
       first_name: firstname,
       last_name: lastname,
       salary: salary,
-      profession:profession,
+      profession: profession,
     };
     console.log("---data", data);
     const updatedData = [...empData, data];
     setEmpData(updatedData);
+    setFirstName("");
+    setLastname("");
+    setSalary("");
+    setProfession("");
   };
 
   return (
-
     <div className="tableMain">
       <div>
-
         <div>
           <div>First name:</div>
           <div>
-            <input type="textbox" onChange={onFirstnameChange} />
+            <input
+              value={firstname}
+              type="textbox"
+              onChange={onFirstnameChange}
+            />
           </div>
         </div>
         <div>
           <div>last name:</div>
           <div>
-            <input type="textbox" onChange={onLastnameChange} />
+            <input
+              value={lastname}
+              type="textbox"
+              onChange={onLastnameChange}
+            />
           </div>
         </div>
         <div>
           <div>Salary:</div>
           <div>
-            <input type="textbox" onChange={onSalaryChange} />
+            <input value={salary} type="textbox" onChange={onSalaryChange} />
           </div>
         </div>
         <div>
           <div>profession:</div>
           <div>
-            <input type="textbox" onChange={onProfessionChange}/>
+            <input
+              value={profession}
+              type="textbox"
+              onChange={onProfessionChange}
+            />
           </div>
         </div>
-        <button onClick={onSubmit} disabled={!firstname||!lastname||!salary||!profession}>submit</button>
+        <button
+          onClick={onSubmit}
+          disabled={!firstname || !lastname || !salary || !profession}
+        >
+          submit
+        </button>
       </div>
       <table>
         <thead>
