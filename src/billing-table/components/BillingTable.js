@@ -36,38 +36,38 @@ export  const BillingTable =()=>{
         console.log("....details....",data)
         const updatedData=[...item,data]
         updatedItem(updatedData)
-        updatedItemName('')
-        updatedPrice('')
-        updatedItemQuantity('')
-        updatedAmount('')
+        updatedItemName("")
+        updatedPrice("")
+        updatedItemQuantity("")
+        updatedAmount("")
 
     };
 
     return(
         <div class="Chitty">
-
+        
             <div>
                 <div>itemName:</div>
                 <div>
-                    <input type="textbox" onChange={onItemNameChange}></input>
+                    <input type="textbox" value={itemName} onChange={onItemNameChange}></input>
                 </div>
             </div>
             <div>
                 <div>price:</div>
                 <div>
-                    <input type="textbox" onChange={onPriceChange}></input>
+                    <input type="textbox" value={price} onChange={onPriceChange}></input>
                 </div>
             </div>
             <div>
                 <div>itemQuantity:</div>
                 <div>
-                    <input type="textbox" onChange={onItemQuantityChange}></input>
+                    <input type="textbox" value={itemQuantity} onChange={onItemQuantityChange}></input>
                 </div>
             </div>
             <div>
                 <div>amount:</div>
                 <div>
-                    <input type="textbox" onChange={onAmountChange}></input>
+                    <input type="textbox" value={amount} onChange={onAmountChange}></input>
                 </div>
             </div>
             <div>
