@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-// export const MoviePage=()=>{
-//     const [moviepage,UpdatedmoviePage]=useState([])
-//      const [home, UpdatedHome] = useState("")
-//      const [Movies, UpdatedMovies] = useState("")
-//      const [cinema, UpdatedCinema] = useState("")
-//      const [orders, UpdatedOrders]=useState("")
-//      const headers=["home","Movies","cinema","orders"]
 
 //     //  const deleteFirstName = (firstname) => {
 //     //     const updatedDaAta = empData.filter((emp) => emp.first_name !== firstname);
