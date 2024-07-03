@@ -1,133 +1,51 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import {Movies} from "./Mock"
+import "./MoviePage.css"
 
 
-//     //  const deleteFirstName = (firstname) => {
-//     //     const updatedDaAta = empData.filter((emp) => emp.first_name !== firstname);
-//     //     setEmpData(updatedDaAta);
-//     //   };
+export const MoviePage = () => { 
+  return(
+    <div>
+    <div className="Paytm-headers">
+     <div className="paytm-names">
+        <img className="Paytm-image" src="https://assetscdn1.paytm.com/movies_new/_next/static/media/tpmc-logo.6a0114d4.png"></img>
+        <div className="Paytm-home"> Home</div>
+        <div className="Paytm-Movies"> Movies</div>
+        <div className="Paytm-cinema"> Cinema</div>
+        <div className="Paytm-Orders"> Orders</div> 
+    </div>
+    <div className="Paytm-login">
+      <button className="Paytm-button">Login/Signup</button>
+   </div>
+   </div>
+   <div className="button-headers">
+   <div>
+       <button className="now-button">Now Showing</button>
+       <button className="coming-button">Coming Soon</button>
+   </div>
+   <div className="location">
+    <button className="bangalore">Bangalore</button>
+   </div>
+   </div>
+   <div className="movies-blr">
+     {Movies.map((movie)=>{
+         return(
+          <div className="movies-details">
+          <div className="movie-name">{movie.name}</div>
+          <img className="movie-images" src={movie.imageUrl}></img>
+          <div className="movie-languages">{movie.languages.map((element)=>{
+             return(
+              <div> {element}</div>             )
+          })}</div>
+          </div>
+
+         )
+     })}
+
      
-//       const displayDetails=(home)=>{
-//         console.log("homepage")
-//       }
-//       const displayDetails1=(Movies)=>{
-//         console.log("Moviespage")
-//       }
-//       const displayDetails2=(cinema)=>{
-//         console.log("MoviesPage")
-//       }
-//       const displayDetails3=(orders)=>{
-//         console.log("OrdersPage")
-//       }
-    
+   </div>
+</div>
+  )
 
 
-//      const onUpdatedHome=(event)=>{
-//         UpdatedHome(event.target.value)
-//      }
-//      const onUpdatedMovies=(event)=>{
-//         UpdatedMovies(event.target.value)
-//      }
-//      const onUpdatedCinema=(event)=>{
-//         UpdatedCinema(event.target.value)
-//      }
-//      const onUpdatedOrders=(event)=>{
-//         UpdatedOrders(event.target.value)
-//      }
-
-//      let onSubmit=()=>{
-//          const data={
-//             home:home,
-//             Movies:Movies,
-//             cinema:cinema,
-//             orders:orders
-//          }
-//          console.log("------",data)
-//          const UpdatedData=[...moviepage,data]
-//          UpdatedmoviePage(UpdatedData)
-//      }
-
-//      return(
-//         <div clss="Sudarshana">
-//             <div>
-//                <div>home</div>
-//                 <div>{onUpdatedHome}</div>
-//             </div>
-//             <div>
-//                 <div>Movies</div>
-//                 <div>{onUpdatedMovies}</div>
-//             </div>
-//             <div>
-//                 <div>cinema</div>
-//                 <div>{onUpdatedCinema}</div>
-//             </div>
-//             <div>
-//                 <div>orders</div>
-//                 <div>{onUpdatedOrders}</div>
-//             </div>
-//             <button onClick={onSubmit}></button>
-//             <table>
-//                 <thead>
-//                 {headers.map((test) => (
-//                   <th>{test}</th>
-//                 ))}
-//                 </thead>
-
-//                 <tbody>
-//                     {moviepage.map((test)=>{
-//                        return (
-//                         <tr>
-//                             <td onClick={()=>{displayDetails()}}>{test.home}</td>
-                        
-//                             <td onChangeCapture={()=>{displayDetails1()}}>{test.Movies}</td>
-                            
-//                             <td onClick={()=>{displayDetails2()}}>{test.cinema}</td>
-
-//                             <td onClick={()=>{displayDetails3()}}>{test.orders}</td>
-//                         </tr>
-//                        )
-//                     } )}
-            
-//                 </tbody>
-//             </table>
-//         </div>
-//      )
-     
-
-// }
-
-
- export const MoviePage=()=>{
-       const headers=("home","movies","cinema","orders")
-       const [languages, updatedLanguages] = useState([])
-       const [format, updatedFormat] = useState([])
-       const [sortBy, updatedSortBy] = useState([])
-       const [genres, updatedGenres] = useState([])
-         
-       const handleSelectLanguages=(event)=>{
-            updatedLanguages(event.target.value)
-        }
-        const handleSelectFormat=(event)=>{
-            updatedFormat(event.target.value)
-        }
-        const handleSelectSortBy=(event)=>{
-            updatedSortBy(event.target.value)
-        }
-        const handleSelectGenres=(event)=>{
-            updatedGenres(event.target.value)
-        }
-       
-        return(
-            <div className="Sudarshana">
-                <div>
-                    <input type="radio"
-                           value="telugu"
-                    onSubmit={updatedLanguages}>select</input>
-                </div>
-                
-                  
-            </div>
-        )
- }
-
-
- 
+}

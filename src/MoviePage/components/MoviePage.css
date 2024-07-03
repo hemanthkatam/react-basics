@@ -1,3 +1,50 @@
-.Sudarshana{
-    font-size: medium;
+.Paytm-headers{
+    display: flex;
+    gap:10px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.paytm-names{
+    display: flex;
+    gap:30px;
+}
+
+
+.Paytm-image{
+  height:50px;
+  width:70px;
+}
+.Paytm-login{
+    background-color: blue;
+    height: 40px;
+    width: 100px;
+    border-radius: 20%;
+}
+.Paytm-button{
+    background-color: blue;
+    height: 40px;
+    width: 100px;
+    border-radius: 20%;
+}
+.button-headers{
+    display: flex;
+    gap:50px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.movies-blr{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.movie-images{
+    height:170px;
+    width:150px
+}
+.movie-languages{
+    gap:20px;
+    display: flex;
+
 }

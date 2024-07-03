@@ -1,0 +1,8 @@
+.button-count{
+     height: 30px;
+     width:100px;
+     display: flex;
+     gap: 30px;
+     margin: auto;
+     align-items: center;
+}
