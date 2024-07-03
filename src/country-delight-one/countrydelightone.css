@@ -55,3 +55,25 @@
     grid-template-columns: auto auto auto auto;
     gap: 20px;
 }
+.new-launches{
+    background-color: gray;
+}
+.New-item1{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.New-items{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:20px
+
+}
+.footer-button{
+    height:30px;
+    width:150px;
+    font-size: 15px;
+    background-color: green;
+    border-radius: 10px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { titleImage, exploreProducts } from "./Mock";
+import { titleImage, exploreProducts, newLaunches } from "./Mock";
 import "./countrydelightone.css";
 
 export const CountryDelightOne = () => {
@@ -38,7 +38,19 @@ export const CountryDelightOne = () => {
           })}
         </div>
       </div>
-      <div className="new-launches">New launches</div>
+      <div className="new-launches">New launches
+      <div className="New-items">
+        {newLaunches.map((product)=>{
+           return(
+            <div>
+              <img className="New-item1" src={product.image} />
+              <div> {product.title}</div>
+              </div>
+           )
+        })}
+      </div>
+      <button className="footer-button">Available on App</button>
+      </div>
     </div>
   );
 };
