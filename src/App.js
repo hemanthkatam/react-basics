@@ -4,6 +4,8 @@ import { HooksFundaments } from "./hooks-fundamentals/HooksFundamentals";
 import { BillingTable } from "./billing-table/components/BillingTable";
 import { MoviePage } from "./MoviePage/components/MoviePage";
 import { CountryDelightOne } from "./country-delight-one/CountryDelightOne";
+import { Button } from "./Button/component/Button";
+
 function App() {
   return (
     <div className="App">
@@ -11,7 +13,8 @@ function App() {
       {/* <HooksFundaments /> */}
       {/* <BillingTable /> */}
       {/* <MoviePage /> */}
-      <CountryDelightOne />
+      {/* <CountryDelightOne /> */}
+      <Button />
     </div>
   );
 }
