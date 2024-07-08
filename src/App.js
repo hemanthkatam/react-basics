@@ -6,6 +6,7 @@ import { MoviePage } from "./MoviePage/components/MoviePage";
 import { StudentDetails } from "./student-details/StudentDetails";
 import { CountryDelightOne } from "./country-delight-one/CountryDelightOne";
 import { BillDetails } from "./Hotel-Bill/Bill-Details";
+import { FatherAndMother } from "./FatherAndMother/FatherAndMother";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <MoviePage /> */}
       {/* <CountryDelightOne /> */}
       {/* <StudentDetails /> */}
-      <BillDetails />
+      {/* <BillDetails /> */}
+      <FatherAndMother />
     </div>
   );
 }
