@@ -5,6 +5,8 @@ import { BillingTable } from "./billing-table/components/BillingTable";
 import { MoviePage } from "./MoviePage/components/MoviePage";
 import { StudentDetails } from "./student-details/StudentDetails";
 import { CountryDelightOne } from "./country-delight-one/CountryDelightOne";
+import { BillDetails } from "./Hotel-Bill/Bill-Details";
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +15,8 @@ function App() {
       {/* <BillingTable /> */}
       {/* <MoviePage /> */}
       {/* <CountryDelightOne /> */}
-      <StudentDetails />
+      {/* <StudentDetails /> */}
+      <BillDetails />
     </div>
   );
 }

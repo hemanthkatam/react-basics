@@ -43,6 +43,10 @@ export  const BillingTable =()=>{
 
     };
 
+    
+
+      // c
+
     return(
         <div class="Chitty">
         
@@ -51,6 +55,7 @@ export  const BillingTable =()=>{
                 <div>
                     <input type="textbox" value={itemName} onChange={onItemNameChange}></input>
                 </div>
+                <div></div>
             </div>
             <div>
                 <div>price:</div>
