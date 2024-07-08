@@ -1,0 +1,25 @@
+.sudarshana{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+/* .idli-button{
+    /* display:flex; */
+    /* gap:20px;
+    align-items: center;
+}
+.dosa-button{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.poori-button{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.vada-button{
+    display:flex;
+    gap:20px;
+    align-items: center;
+} */ 
