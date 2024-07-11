@@ -7,6 +7,7 @@ import { StudentDetails } from "./student-details/StudentDetails";
 import { CountryDelightOne } from "./country-delight-one/CountryDelightOne";
 import { BillDetails } from "./Hotel-Bill/Bill-Details";
 import { FatherAndMother } from "./FatherAndMother/FatherAndMother";
+import { HotelMenu } from "./HotelMenu/HotelMenu";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <CountryDelightOne /> */}
       {/* <StudentDetails /> */}
       {/* <BillDetails /> */}
-      <FatherAndMother />
+      {/* <FatherAndMother /> */}
+      <HotelMenu />
     </div>
   );
 }

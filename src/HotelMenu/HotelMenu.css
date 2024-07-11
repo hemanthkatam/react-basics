@@ -1,0 +1,18 @@
+.root{
+    margin: 30px;
+}
+
+.add-item{
+    padding: 30px;
+    border: 2px solid black;
+    gap: 5px;
+    display: flex;
+}
+.list{
+    margin: 30px;
+    width: 200px;
+}
+
+.list-table{
+    width: 200px;
+}
