@@ -72,3 +72,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##Redux
+
+redux is popur package for statemanagement. redux keep application state in one place which is called as global state. all the componnetns in application easily can access global state
+
+1. How to add redux to Applicaation
+
+   1. Install redux and react-readux npm packages
+   2. run npm install redux react-redux --save
+
+2. we need to setup redux in our application
+   a. Creare Reducer
+
+`const defaultState = {
+name: "Hemanth",
+job: "Software engineer",
+salary: 3000,
+};
+
+export const UserReducer = (action, state = defaultState) => {
+return state;
+};`
+
+    b.create store
+    import { createStore } from "redux";
+    const store = createStore(UserReducer);
+    c. connect store to applciation with Provider
+    <Provider store={store}></Provider>
+
+    3. utilize state in components
+    import { useSelector } from "react-redux";
+
+const getState = (state) => {
+return state.name;
+};
+const empName = useSelector(getState);
+
+<!--
+ leave this
+  1. Create new React application
+  npx create-react-app my-first-redux
+  install redux and react-redux
+
+  {
+    company: 'zomato',
+    restuarent: 'meghana'
+    'foodItems': ['idly','vada','dosa']
+  }
+
+                     ParentCompany
+                        Resturent
+                            FoodItems
+
+
+
+ -->

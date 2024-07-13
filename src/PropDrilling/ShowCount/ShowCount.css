@@ -1,0 +1,10 @@
+.child{
+    padding: 20px;
+    margin: 30px;
+    border: 3px solid red;
+}
+
+.counter{
+    gap: 10px;
+    display: flex;
+}
